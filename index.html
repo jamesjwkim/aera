@@ -2,10 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aera</title>
+    <title>Urgency</title>
+    <style>
+        body {
+            color: azure;
+            background-color: rgb(88, 88, 88);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Aera</h1>
+    <h1>How much time do you really have?</h1>
+    <div>
+        <p>Time remaining until next day...</p>
+        <span id="today"></span>
+    </div>
+    <div>
+        <p>Time remaining until next week...</p>
+        <span id="week"></span>
+    </div>
+    <div>
+        <p>Time remaining until next month...</p>
+        <span id="month"></span>
+    </div>
 </body>
 </html>
