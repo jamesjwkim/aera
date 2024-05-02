@@ -1,0 +1,24 @@
+body {
+    color: azure;
+    background-color: rgb(88, 88, 88);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+body h1{
+    font-size: 40px;
+}
+
+.age-check {
+    margin: 50px;
+}
+
+.leFadeInLeft span { animation-name: leFadeInLeft }
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to { opacity: 1 }
+}

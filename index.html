@@ -5,29 +5,37 @@
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urgency</title>
-    <style>
-        body {
-            color: azure;
-            background-color: rgb(88, 88, 88);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            align-items: center;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 <body>
-    <h1>How much time do you really have?</h1>
-    <div>
-        <p>Time remaining until next day...</p>
-        <span id="today"></span>
+    <h1 class="animate__animated animate__zoomIn">How much time do you really have?</h1>
+    <div class="age-check animate__animated animate__fadeInLeft animate__slow">
+        <p>Enter your age:</p>
+        <span>
+            <input type="date" id="start" name="trip-start" min="1979-01-01"/>
+            <button id="date-button">enter</button>
+        </span>
+        <p id="your-age"></p>
+
     </div>
-    <div>
-        <p>Time remaining until next week...</p>
-        <span id="week"></span>
-    </div>
-    <div>
-        <p>Time remaining until next month...</p>
-        <span id="month"></span>
+    <div class="age-check animate__animated animate__fadeInLeft animate__slower">
+        <div>
+            <p>Time remaining until next day<span id="today-date"></span>:</p>
+            <span id="today"></span>
+        </div>
+        <div>
+            <p>Time remaining until next week<span id="week-date"></span>:</p>
+            <span id="week"></span>
+        </div>
+        <div>
+            <p>Time remaining until next month<span id="month-date"></span>:</p>
+            <span id="month"></span>
+        </div>
     </div>
 </body>
 </html>
