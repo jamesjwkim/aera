@@ -69,14 +69,71 @@ setInterval(() => {
 const dateInput = document.getElementById('start');
 const dateButton = document.getElementById('date-button')
 
+// ---
+// Age calculator
+
+function calculateAge(birthdate) {
+    // Parse the birthdate string into a Date object
+    var birthDate = new Date(birthdate);
+    
+    // Get the current date
+    var currentDate = new Date();
+    
+    // Calculate the difference in milliseconds between the current date and the birthdate
+    var difference = currentDate - birthDate;
+    
+    // Convert the difference from milliseconds to years
+    var age = difference / (1000 * 60 * 60 * 24 * 365.25);
+    
+    // Round the age to 5 decimal places
+    age = Math.round(age * 1000000000000000) / 1000000000000000;
+    
+    return age;
+}
+
+function updateAgeContinuously(birthdate) {
+    // Update the age every 100 milliseconds (10 times per second)
+    setInterval(function() {
+        var age = calculateAge(birthdate);
+        document.getElementById("your-age").textContent = "You are currently "+ age + " years old.";
+    }, 100); // Update every 100 milliseconds
+}
+
 // Add an event listener for when the input value changes
 dateButton.addEventListener('click', function() {
     // Get the selected date
     const selectedDate = dateInput.value;
-    // Log the selected date to the console
+
     console.log('Selected date:', selectedDate);
-    document.getElementById("your-age").textContent = selectedDate
+
+    if (selectedDate === "") {
+        alert("Please enter a valid date.");
+        return;
+    }
+
+    var parsedDate = new Date(selectedDate);
+
+    // Get the current date
+    var currentDate = new Date();
+
+    // Check if the entered date is not in the future
+    if (parsedDate > currentDate) {
+        alert("Please enter a date that is not in the future.");
+        return;
+    }
+
+    localStorage.setItem('birthdate', selectedDate);
+
+    updateAgeContinuously(selectedDate)
     document.getElementById("your-age").classList.add('animate__animated', 'animate__fadeIn');
-    
 });
 
+window.onload = function() {
+    var savedBirthdate = localStorage.getItem('birthdate');
+    if (savedBirthdate) {
+        // If a birthdate is saved, update the age continuously
+        updateAgeContinuously(savedBirthdate);
+        // Set the input value to the saved birthdate
+        dateInput.value = savedBirthdate;
+    }
+};
