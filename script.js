@@ -86,7 +86,7 @@ function calculateAge(birthdate) {
     var age = difference / (1000 * 60 * 60 * 24 * 365.25);
     
     // Round the age to 5 decimal places
-    age = Math.round(age * 1000000000000000) / 1000000000000000;
+    age = Math.round(age * 1000000000000) / 1000000000000;
     
     return age;
 }
@@ -95,8 +95,8 @@ function updateAgeContinuously(birthdate) {
     // Update the age every 100 milliseconds (10 times per second)
     setInterval(function() {
         var age = calculateAge(birthdate);
-        document.getElementById("your-age").textContent = "You are currently "+ age + " years old.";
-    }, 100); // Update every 100 milliseconds
+        document.getElementById("your-age").textContent = "You are "+ age + " years old.";
+    }, 40); // Update every 100 milliseconds
 }
 
 // Add an event listener for when the input value changes
