@@ -172,12 +172,72 @@ window.onload = function() {
 // RANDOM QUOTES!
 quotesArray = [
     {
-        "name": "James",
+        "name": "anonymous",
         "quote": "Pave your own way no matter what."
     },
     {
-        "name": "Jinwoo",
+        "name": "anonymous",
         "quote": "You have to do what feels right for you."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "The past has no power over the present moment."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Life isn't as serious as the mind makes it out to be."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "I have lived with several Zen masters -- all of them cats."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Life is the dancer and you are the dance."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Whatever you fight, you strengthen, and what you resist, persists."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Worry pretends to be necessary but serves no useful purpose."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "It is not uncommon for people to spend their whole life waiting to start living."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Accept - then act. Whatever the present moment contains, accept it as if you had chosen it."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Being spiritual has nothing to do with what you believe and everything to do with your state of consciousness."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "This, too, will pass."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "All problems are illusions of the mind."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Awareness is the greatest agent for change."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Don't Seek Happiness. If you seek it, you won't find it, because seeking is the antithesis of happiness"
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Being must be felt. It can't be thought."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Only the truth of who you are, if realized, will set you free."
     }
 ]
 
@@ -186,4 +246,15 @@ function getRandomQuote(quotesArray) {
     return quotesArray[randomIndex];
 }
 
-console.log(getRandomQuote(quotesArray))
+function displayRandomQuote() {
+    const quoteDiv = document.querySelector('.quote-html');
+    const randomQuote = getRandomQuote(quotesArray);
+    const quoteHTML = `
+        <div class="quote-text animate__animated animate__fadeIn animate__delay-2s">"${randomQuote.quote}"</div>
+        <div class="quote-author animate__animated animate__fadeIn animate__delay-3s">- ${randomQuote.name}</div>
+    `;
+    quoteDiv.innerHTML = quoteHTML;
+}
+
+// Display a random quote when the page loads
+displayRandomQuote();
