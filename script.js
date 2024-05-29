@@ -175,6 +175,7 @@ quotesArray = [
         "name": "anonymous",
         "quote": "Pave your own way no matter what."
     },
+    
     {
         "name": "anonymous",
         "quote": "You have to do what feels right for you."
@@ -238,6 +239,114 @@ quotesArray = [
     {
         "name": "Eckhart Tolle",
         "quote": "Only the truth of who you are, if realized, will set you free."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Nothing has happened in the past; it happened in the Now. Nothing will ever happen in the future; it will happen in the Now."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "If not now, when?"
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "What a caterpillar calls the end of the world we call a butterfly."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "You are not IN the universe, you ARE the universe, an intrinsic part of it."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "In today's rush we all think too much, seek too much, want too much and forget about the joy of just Being."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Where there is anger there is always pain underneath."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "The beginning of freedom is the realization that you are not “the thinker.”"
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Humanity is now faced with a stark choice: Evolve or die."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "What you react to in others, you strengthen in yourself."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Words reduce reality to something the human mind can grasp, which isn’t very much."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Man made God in his own image..."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Once you have identified with some form of negativity, you do not want to let it go..."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Your outer journey may contain a million steps; your inner journey only has one: the step you are taking right now."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Reading is my passion and my escape since I was 5 years old."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Love is a state of Being."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Accept — then act. Whatever the present moment contains, accept it as if you had chosen it."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "The significance is hiding in the insignificant. Appreciate everything."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Die to the past every moment. You don't need it."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Authentic human interactions become impossible when you lose yourself in a role."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Become conscious of being conscious."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Defining yourself through thought is limiting yourself."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "It is when we are trapped in incessant streams of compulsive thinking..."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "You have so much to learn from your enemies."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Focus attention on the feeling inside you."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "You become most powerful in whatever you do if the action is performed for its own sake..."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "Rather than being your thoughts and emotions, be the awareness behind them."
+    },
+    {
+        "name": "Eckhart Tolle",
+        "quote": "The primary cause of unhappiness is never the situation, but you thoughts about it."
     }
 ]
 
